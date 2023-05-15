@@ -6,7 +6,7 @@ Este es un proyecto para poner en practica todo lo aprendido en el curso de prog
 - El usuario debe poder elegir entre encriptar o desencriptar el mensaje.
 - El usuario debe poder copiar el mensaje encriptado o desencriptado al portapapeles.
 
-Entonces, basado en estos requisitos se creo el siguiente proyecto. El cual se puede ver en el siguiente enlace: [Encriptador](https://encriptador.netlify.app/).
+Entonces, basado en estos requisitos se creo el siguiente proyecto. El cual se puede ver en el siguiente enlace: [Encriptador](https://repolloezzz.github.io/Alura-Challange-by-RepolloEzzz/).
 
 ## Tecnologías utilizadas
 
