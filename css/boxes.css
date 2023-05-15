@@ -1,0 +1,191 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F3F5FC;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.social_links {
+    display: flex;
+    margin-left: auto;
+    gap: 1rem;
+}
+
+.logo {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.diamond_finder {
+    display: none;
+}
+
+
+/* form section */
+
+.encryption_form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.encryption_form>form {
+    display: flex;
+    flex-direction: column;
+}
+
+.encryption_form>form>textarea {
+    display: block;
+    max-width: 100%;
+    min-height: 20rem;
+    border: none;
+    background: none;
+    color: #0A3871;
+    font-size: x-large;
+    resize: none;
+}
+
+.encryption_form>form>textarea::placeholder {
+    color: #0A3871;
+    font-size: x-large;
+}
+
+.encryption_form .msg_input {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    margin: 0.5rem 0.2rem;
+    font-size: small;
+}
+
+.encryption_form .submit_section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* result section */
+.encryption_result {
+    background-color: #ffffff;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* result section empty */
+.encryption_result .result_empty {
+    display: flex;
+    flex-direction: column;
+}
+
+#encryption_result .result_empty>h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.encryption_result .result_empty>p {
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+    max-width: 100%;
+}
+
+/* result section > full */
+.encryption_result .result {
+    display: none;
+    flex-direction: column;
+}
+
+.encryption_result .result>p {
+    color: #495057;
+    font-size: x-large;
+    word-break: break-all;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: #F3F5FC;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .encryption_form>form>textarea {
+        min-height: 25rem;
+    }
+
+    .encryption_form .msg_input {
+        margin-top: auto;
+    }
+
+    .encryption_form .submit_section {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .encryption_form .submit_section>button {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .encryption_form {
+        width: 75%;
+    }
+
+    .encryption_form>form {
+        width: 70%;
+        height: 85%;
+        margin: 0 auto;
+    }
+
+    .encryption_result .result_empty {
+        height: 100%;
+        justify-content: center;
+    }
+
+    .encryption_result .result>img {
+        display: block;
+    }
+
+    .encryption_result .result {
+        height: 100%;
+    }
+
+    .encryption_result .result>button {
+        margin-top: auto;
+    }
+
+    .encryption_result .result>p {
+        max-height: 80%;
+    }
+
+    .encryption_result {
+        width: 25%;
+    }
+
+    .diamond_finder {
+        display: block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,65 @@
+button {
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.btn-border {
+    background-color: transparent;
+    border: 2px solid #0A3871;
+    border-radius: 1.5rem;
+    color: #0A3871;
+    font-size: medium;
+}
+
+.btn-border:hover {
+    background-color: #D8DFE8;
+}
+
+.btn-fill {
+    background-color: #0A3871;
+    border-radius: 1.5rem;
+    color: #ffffff;
+    font-size: medium;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #2f2f2f;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    height: min-content;
+    padding: 0.2rem 0.8rem 0.2rem 0.2rem;
+}
+
+.github-link>img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.linkedin-link {
+    display: flex;
+    background-color: #2d8ac0;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    width: min-content;
+    height: min-content;
+}
+
+.linkedin-link>img {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-border {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .btn-fill {
+        padding: 0.8rem 1.5rem;
+    }
+}

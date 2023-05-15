@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador - Reto AluraLatam by @RepolloEzzz</title>
+    <meta name="description" content="Encriptador de texto" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/boxes.css" />
+    <link rel="stylesheet" href="./css/buttons.css" />
+    <link rel="icon" href="./images/key-icon.svg" />
+  </head>
+  <body>
+    <!-- Parte del formulario donde se espera el texto -->
+    <main class="encryption_form">
+      <nav>
+        <h1>
+          <img class="logo" src="./images/Logo.svg" alt="Logo de AluraLatam" />
+        </h1>
+        <div class="social_links">
+          <a href="https://github.com/Repolloezzz" class="github-link">
+            <img src="./images/github-icon.svg" alt="github-icon" />
+            <span>@RepolloEzzz</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/luis-gabriel-coa-callisaya/"
+            class="linkedin-link"
+          >
+            <img src="./images/linkedin-icon.svg" alt="linkedin-icon" />
+          </a>
+        </div>
+      </nav>
+      <form id="form-text-input">
+        <textarea
+          name="text_input"
+          id="text_input"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <span class="msg_input">
+          <img
+            src="./images/exclamation-circle-fill.svg"
+            alt="exclamatio-circle"
+          />
+          Solo letras en minuscúlas y sin acentos
+        </span>
+        <div class="submit_section">
+          <button name="encrypt" type="submit" class="btn-fill">
+            Encripatar
+          </button>
+          <button name="decrypt" type="submit" class="btn-border">
+            Desencriptar
+          </button>
+        </div>
+      </form>
+    </main>
+    <!-- Parte del resultado donde se muestra la encriptación -->
+    <section id="encryption_result" class="encryption_result">
+      <!-- Ventana de espera de algún texto -->
+      <div id="result_empty" class="result_empty">
+        <img
+          class="diamond_finder"
+          src="./images/Muñeco.png"
+          alt="Persona buscando algo importante en un diamante con una lupa"
+        />
+        <h2>Ningún mensaje fue encontrado</h2>
+        <p>Ingrese el texto que desees encriptar o desencriptar.</p>
+      </div>
+      <!-- Ventana de resultado si se procede -->
+      <div id="result" class="result">
+        <p id="result_message"></p>
+        <button id="btn_copy" class="btn-border">Copiar</button>
+      </div>
+    </section>
+  </body>
+  <script src="./javascript/script.js" defer></script>
+</html>
